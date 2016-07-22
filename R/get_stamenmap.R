@@ -233,7 +233,7 @@ get_stamenmap <- function(
   if(is.null(names(bbox))) names(bbox) <- c("left","bottom","right","top")
 
   # set image type (stamen only)
-  if(maptype %in% c("terrain","terrain-background","watercolor")){
+  if(maptype %in% c("terrain-background","watercolor")){
     filetype <- "jpg"
   } else {
     filetype <- "png"
